@@ -2,6 +2,18 @@
 #include <sstream>
 #include <string>
 #include <vector>
+#include <cstddef>
+#include <span>
+
+bool data_inside_object(const std::string& s) {
+    auto bytes = std::as_bytes(std::span{&s, 1}); // span<const std::byte> over s
+    const void* dp = static_cast<const void*>(s.data());
+    for (size_t i = 0; i < bytes.size(); ++i) {
+        const void* bp = static_cast<const void*>(bytes.data() + i);
+        if (bp == dp) return true;
+    }
+    return false;
+}
 
 std::vector<std::string> string_bytes(const std::string& s) {
     const auto* p = reinterpret_cast<const unsigned char*>(&s);
