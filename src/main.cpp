@@ -1,18 +1,22 @@
 #include <cstdio>
 
-void limits_example();
-void lambda_example();
+void lambda();
+void limits();
 void sizeof_string();
+void vexing_parse();
 
 int main() { 
 
-    lambda_example();
+    lambda();
     std::printf("\n");
 
-    limits_example();
+    limits();
     std::printf("\n");
 
     sizeof_string();
+    std::printf("\n");
+
+    vexing_parse();
     std::printf("\n");
 
     return 0; 
