@@ -1,11 +1,17 @@
 #include <cstdio>
 
+void duration();
 void lambda();
 void limits();
 void sizeof_string();
 void vexing_parse();
+void unspecified();
+
 
 int main() { 
+
+    duration();
+    std::printf("\n");
 
     lambda();
     std::printf("\n");
@@ -14,6 +20,9 @@ int main() {
     std::printf("\n");
 
     sizeof_string();
+    std::printf("\n");
+
+    unspecified();
     std::printf("\n");
 
     vexing_parse();

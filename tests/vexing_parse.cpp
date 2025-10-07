@@ -13,12 +13,12 @@ void vexing_parse() {
 
     // most vexing parse, won't compile
     // SomeType st1();
-    // std::printf("{%i}\n", st1.data);
+    // std::printf("%d\n", st1.data);
 
     // some ways to avoid the most vexing parse
     SomeType st2{};
-    std::printf("{%i}\n", st2.data);
+    std::printf("%d\n", st2.data);
 
     SomeType st3{};
-    std::printf("{%i}\n", st3.data);
+    std::printf("%d\n", st3.data);
 }
