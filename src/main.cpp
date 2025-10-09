@@ -3,6 +3,7 @@
 void duration();
 void lambda();
 void limits();
+void order();
 void sizeof_string();
 void vexing_parse();
 void unspecified();
@@ -17,6 +18,9 @@ int main() {
     std::printf("\n");
 
     limits();
+    std::printf("\n");
+
+    order();
     std::printf("\n");
 
     sizeof_string();
