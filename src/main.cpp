@@ -1,6 +1,7 @@
 #include <cstdio>
 
 void duration();
+void for_loop();
 void lambda();
 void limits();
 void order();
@@ -12,6 +13,9 @@ void unspecified();
 int main() { 
 
     duration();
+    std::printf("\n");
+
+    for_loop();
     std::printf("\n");
 
     lambda();
